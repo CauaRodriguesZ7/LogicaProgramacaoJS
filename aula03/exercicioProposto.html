@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Proposto em JavaScript</title>
+</head>
+<body>
+
+    <script>
+        //pedir para o usuario digitar um numero 
+        let n1 = prompt("Digite um numero: ");
+
+        //converter em numero inteiro 
+        n1 = parseInt(n1);
+
+        //pedir para o usuario digitar outro numero
+        let n2 = prompt("Digite outro numero: ");
+
+        //converter em numero inteiro
+        n2 = parseInt(n2);
+
+
+        /*
+        mostrar num alert o seguinte texto:
+        "O resto da divisao de (n1) por (n2) é: (resultado)";
+        */
+
+        let restoDiv = n1 % n2;
+        alert("O resto da divisao dos dois numeros é: " + restoDiv);
+
+        /*
+        mostrar num alert o seguinte texto:
+        "o numero (n1) elevado a (n2) é: (resultado)";
+        */
+
+        let expoente = n1 ** n2;
+        alert("O numero " + (n1) + " elevado a " + (n2) + " é: " + expoente);
+
+        
+    </script>
+    
+</body>
+</html>
