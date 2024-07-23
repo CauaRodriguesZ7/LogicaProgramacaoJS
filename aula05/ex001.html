@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 001</title>
+</head>
+<body>
+</body>
+
+    <script>
+        /*
+        Exercício 1: Verificação de Aprovação com Nota Mínima
+        Descrição: Peça ao usuário para digitar uma nota. Se a nota for maior ou igual a 7,
+        informe que o aluno está aprovado. Caso contrário, informe que está reprovado.
+        */
+
+        //declara variavei e captura informacoes do usuario:
+        let nota = parseFloat(prompt("Digite a nota: "));
+
+        //verfica a media e imprime mensagem ao usuario:
+        alert(nota >= 7);
+
+        if(nota >= 7){
+            alert("Aprovado! ");
+        } else {
+            alert("Reprovado: ");
+        }
+    </script>
+</html>
