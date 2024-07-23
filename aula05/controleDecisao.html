@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Decisão</title>
+</head>
+<body> 
+</body>
+
+<script>
+    
+    /*
+    Pedir para o usuário digitar dois numeros e mostrar
+    uma mensagem informando se foi aprovado ou nao.
+    a nota de corte é 5.    
+    */
+
+    //declarando variáveis 
+    let num1 = parseFloat(prompt("Digite a primeira nota: "));
+    let num2 = parseFloat(prompt("Digite a segunda nota: "));
+    let num3 = parseFloat(prompt("Digite a terceira nota:  "));
+
+    //realizando a soma dos dois numeros
+    let media = (num1 + num2 + num3) / 3;
+
+    alert(media > 5)
+
+    if(media > 5) {
+        //bloco verdade
+        alert("Parabéns, você foi aprovado! ");
+    }else {
+        //bloco mentira
+        alert("Infelizmente voçê não atingiu a média esperada. ");
+    }
+
+</script>
+</html>
