@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 002</title>
+</head>
+<body>
+</body>
+
+<script>
+    /*
+    Exercício 2: Verificação de Aprovação com Média Ponderada
+    Descrição: Solicite ao usuário três notas e seus respectivos pesos.
+    Calcule a média ponderada e informe se o aluno está
+    aprovado se a média for maior ou igual a 6.
+    */
+
+   //declara variaveis
+   let nota1 = parseFloat(prompt("Digite a primeira nota: "));
+   let peso1 = parseFloat(prompt("Digite o peso da primeria nota: "));
+
+   let nota2 = parseFloat(prompt("Digite a segunda nota: "));
+   let peso2 = parseFloat(prompt("Digite o peso da segunda nota: "));
+
+   let nota3 = parseFloat(prompt("Digite a terceira nota: "));
+   let peso3 = parseFloat(prompt("Digite o peso da terceira nota: "));
+
+   let calculoMedia = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3);
+
+   if(calculoMedia >= 6){
+    alert("Aprovado! ");
+   } else {
+    alert("infelizmente você foi reprovado. ");
+   }
+   
+</script>
+</html>
