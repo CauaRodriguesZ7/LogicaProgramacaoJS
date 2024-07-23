@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Operadores de Comparação</title>
+</head>
+<body>
+</body>
+
+<script>
+
+    /*
+    PROBLEMA: pedir para o usuario digitra dois numeros e
+    mostrar um boolean indicando se a media for maior que 5.
+    */
+
+    //declara as variaveis
+    let n1 = prompt("Digite um numero: " );
+    n1 = parseFloat(n1)
+
+    let n2 = parseFloat(prompt("Digite outro numero: ")); //outra maneria de converter uma string para numero em uma variavel
+
+    //faz o calculo da media
+    let media = (n1 + n2) / 2; 
+
+    //verifica se o numero é maior que 5 e imprime o resultado
+    alert("O numero é: " + (media > 5))
+
+</script>
+
+</html>
