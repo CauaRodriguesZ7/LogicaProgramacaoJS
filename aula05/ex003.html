@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 003</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    /*
+    Exercício 4: Verificação de Aprovação com Nota de Recuperação
+    Descrição: Solicite ao usuário duas notas. Se a média for menor que 4,
+    informe que o aluno está reprovado. Se a média estiver entre 4 e 6, informe que o aluno precisa fazer recuperação.
+    Se a média for maior ou igual a 6, informe que o aluno está aprovado.
+    */
+
+    //solicita notas ao  usuario 
+    let nota1 = parseFloat(prompt("Digite a primeira nota: "));
+    let nota2 = parseFloat(prompt("Digite a segunda nota: "));
+
+    //calculo da media  
+    media = (nota1 + nota2) / 2;
+
+    if (media >= 6){
+        alert("Aprovado! ");
+    } else if(media >= 4){
+        alert("Recuperação. ")
+    } else {
+        alert("Reprovado. ");
+    }
+
+</script>
+
+</html>
