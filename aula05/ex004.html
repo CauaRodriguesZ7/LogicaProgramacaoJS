@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 004</title>
+</head>
+<body>
+</body>
+
+<script>
+/*
+Exercício 5: Verificação de Aprovação com Nota Máxima
+Descrição: Solicite ao usuário para digitar a nota final de um aluno e
+verifique se a nota está dentro da faixa de aprovação (entre 5 e 10).
+Informe se o aluno está aprovado ou reprovado com base nesta faixa.
+*/
+
+let nota1 = parseFloat(prompt("Digite a primeira nota: "));
+let nota2 = parseFloat(prompt("Digite a segunda nota: "));
+let nota3 = parseFloat(prompt("Digite a terceira nota: "));
+
+//calculo da media
+let notaFinal = (nota1 + nota2 + nota3) / 3;
+
+//verifica nota e imprime mensagem ao usuario:
+if (notaFinal >= 5 && notaFinal <= 10 ){
+    alert("Aprovado!");
+} else {
+    alert("Reprovado. ");
+} 
+
+</script>
+
+</html>
