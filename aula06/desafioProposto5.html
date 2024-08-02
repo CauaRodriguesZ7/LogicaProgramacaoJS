@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Proposto</title>
+</head>
+<body>
+</body>
+
+<script>
+    //REESCREVER O CÓDIGO DE FORMA MAIS SUCINTA:
+    // fazer jogador1 digitar um numero
+    // fazer jogador2 digitar outro numero
+    // se forem iguais, mostrar mensagem 'empate' 
+
+    let jogador1 = parseInt(prompt("Numero do joagdor 1: "));
+    let jogador2 = parseInt(prompt("Numero do jogador 2: "));
+
+    if (jogador1 === jogador2){
+        alert("Empate. ");
+    }else{
+
+        // sortear um numero entre 0 e 1
+        let numSorteado = parseInt(Math.random() * 2);
+        alert("o numero sorteado: " + numSorteado);
+
+    // se o numero sorteado for 0, ganha quem escolher o numero MENOR
+
+        if( (numSorteado === 0 && jogador1 < jogador2) ||
+        (numSorteado === 1 && jogador1 > jogador2) ){
+                alert("Jogador 1 ganhou! ");
+        }else{
+            alert("Jogador 2 ganhou! ");
+        }
+    }  
+</script>
+</html>
