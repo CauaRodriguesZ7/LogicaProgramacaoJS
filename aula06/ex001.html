@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+</body>
+
+<script>
+// Para este exercício, tente reescrever a lógica da aula anterior, mas agora utilizando o operador OU ( || ).
+
+
+let nota1 = parseFloat(prompt("Digite a primeira nota: "));
+let nota2 = parseFloat(prompt("Digite a segunda nota: "));
+
+//calculo da média
+let media = (nota1 + nota2) / 2;
+
+//realiza operacao e informa usuario
+if(media > 5){
+    alert("Parabéns, Você foi aprovado! ");
+}else if(nota1 || nota2 === 0){
+    alert("Reprovado");
+}else{
+    alert("Reprovado. ");
+}
+</script>
+</html>
